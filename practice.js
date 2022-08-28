@@ -348,7 +348,7 @@ for (i in dav) {
 for (i of Object.values(david)) {
   console.log(i)
 }
-*/
+
 var prince = "David"
 var path = "will become king"
 var king =
@@ -359,4 +359,67 @@ Who ${path}.`
 
 
 var style = "line-height: 4rem; color: gold; font-size: 2.5rem; background-color: #818181; border: 2px solid brown; display: flex; gap: 1rem; align-items: center"
-console.log(`%c"${king}"`, style)
+console.log(`%c"${
+
+
+// Task 1
+var dairy = ['cheese', 'sour cream', 'milk', 'yogurt', 'ice cream', 'milkshake']
+function logDairy() {
+  for (var item of dairy) {
+    console.log(item)
+  }
+}
+logDairy()
+
+// Task 2
+const animal = {
+  canJump: true
+};
+const bird = Object.create(animal);
+
+bird.canFly = true;
+bird.hasFeathers = true;
+
+function birdCan() {
+  for (item of Object.entries(bird)) {
+    console.log(item)
+  }
+}
+birdCan()
+
+// Task 3
+function animalCan() {
+  for (item in bird) {
+    console.log(`${item} : ${bird[item]}`)
+  }
+}
+animalCan()
+
+
+
+const david = ["King", "Lover", "Magician", "Warrior"]
+
+david.filter(function (item) {
+  if (item.length > 5) {
+    console.log(item)
+  } else {
+    console.log("Nope.")
+  }
+})
+
+david.map(function (items) {
+  console.log(`${items}ker`)
+})
+
+let bestBoxers = new Map();
+bestBoxers.set(1, "The Champion");
+bestBoxers.set(2, "The Runner-up");
+bestBoxers.set(3, "The third place");
+
+console.log(bestBoxers.get(2));
+
+var cash = ["Bling", "$500", "$500", "$500", "Bling", 9999, "Bling", "$500", 9999]
+const convert = new Set(cash)
+var cash2 = new Array(convert)
+*/
+
