@@ -1,5 +1,6 @@
 const banner = document.querySelectorAll('.banner')
 const message = document.getElementById('message')
+const chat = document.getElementById('chat')
 
 let count = 0
 
@@ -22,3 +23,7 @@ message.addEventListener('click', () => {
   document.getElementById('msgbtn').classList.toggle('on')
 })
 
+chat.addEventListener('click', () => {
+  document.querySelector('.send').classList.toggle('on')
+  document.getElementById('msgbtn').classList.toggle('on')
+})
