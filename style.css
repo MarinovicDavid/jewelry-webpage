@@ -38,7 +38,6 @@ h2 {
 button {
   width: 8rem;
   height: 2rem;
-
   padding: 0;
   border-radius: 0.5rem;
   border: 1px solid #00000080;
@@ -214,6 +213,8 @@ article {
   align-items: center;
   padding: 1rem 0;
   width: 31%;
+  position: relative;
+  top: 0;
 }
 
 article img {
@@ -336,17 +337,19 @@ footer {
 
 @media (max-width: 935px) {
   article h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+  }
+  .banner,
+  .banner img {
+    height: 60vh;
   }
 }
 
-@media (max-width: 805px) {
+@media (max-width: 705px) {
   main {
     margin: 0 2.5rem;
   }
-}
 
-@media (max-width: 685px) {
   .banner h1 {
     font-size: 2.6rem;
   }
@@ -378,6 +381,11 @@ footer {
 @media (max-width: 550px) {
   main {
     margin: 0 1.25rem;
+  }
+
+  .banner,
+  .banner img {
+    height: 70vh;
   }
 
   .banner h1 {
