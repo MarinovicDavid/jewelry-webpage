@@ -1,1 +1,1 @@
-# jewelry-webpage
+# Simple page for jewelry-selling business
